@@ -1,0 +1,215 @@
+body{
+    background: black;
+}
+#face{
+    height: 200px;
+    width: 200px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background: chartreuse;
+    margin: auto;
+    margin-top: 10px;
+}
+#larm,#rarm{
+    height: 100px;
+    width: 25px;
+    background: chartreuse;
+    margin-top: 15px;
+    border-radius: 50px;
+}
+#center{
+    height: 200px; ;
+    width: 200px;
+    background: chartreuse;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+}
+#body{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 15px;
+
+}
+#leye,#reye{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: black;
+    
+}
+legs{
+    background: chartreuse;
+
+}
+#llegs,#rlegs{
+    height: 100px; ;
+    width: 25px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    justify-content: space-evenly;
+    background: chartreuse;
+
+}
+#legs{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: -18px;
+}
+#eyes{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 125px;
+}
+#main{
+    height: 530px;
+    width: 320px;
+    margin: auto;
+    margin-top: 80px;
+}
+#main:hover #face{
+    width: 180px; 
+    height: 180px;
+    background: red;
+    border-radius: 40px;
+    animation:change 1s infinite;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+@keyframes changeface{
+    0%{
+        transition: rotate(0deg);
+        border-radius: 10%;    
+    }
+    50%{
+        transition: rotate(45deg);
+        border-radius: 30%;
+    }
+    75%{
+        transition: rotate(0deg);
+        border-radius: 40px; 
+    }
+    100%{
+        transition: rotate(-45deg);
+       
+    }
+}
+#main:hover #leye{
+    background: white;
+    animation: changeface 1s infinite;
+}
+#main:hover #reye{
+    background: orange;
+    animation: changeface 1s infinite;
+}
+#main:hover #center{
+    background: rgb(223, 6, 151);
+    animation: changecenter 1s infinite;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+@keyframes changecenter{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    75%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#main:hover #rarm{
+    background: rosybrown;
+    animation: changearm 1s infinite;
+
+}
+@keyframes changearm{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-45deg);
+    }
+}
+#main:hover #larm{
+    background: rosybrown;
+    animation: changearm 1s infinite;
+}
+@keyframes changearm{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-45deg);
+    }
+}
+#main:hover #rlegs{
+    background:rgb(16, 189, 102);
+    animation: changeleg 1s infinite;
+}
+@keyframes changeleg{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-45deg);
+    }
+}
+#main:hover #llegs{
+    background: rgb(16, 189, 102);
+    animation: changeleg 1s infinite;
+}
+@keyframes changeleg{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-45deg);
+    }
+}
+h1{
+    color: orangered;
+    font-family: "Iceberg", sans-serif;
+    font-size: 500%;
+    font-weight:bolder;
+}
+body{
+    background-image: url(./img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
